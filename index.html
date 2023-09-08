@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage One Task</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+       <div class="profile">
+         <img src="ola2.jpg" alt="Jabson743" data-testid="slackDisplayImage">
+         <h2 data-testid="slackUserName">Iyanda Olakunle</h2>
+         <p data-testid="myTrack">Frontend</p>
+       </div>
+       <div class="">
+        <p data-testid="currentDayOfTheWeek"></p>
+        <p data-testid="currentUTCTime"></p>
+       </div>
+       <div>
+        <a href="https://github.com/Jabson743">GitHub Repository</a>
+       </div>
+       </div>
+       <div>
+        <p id="currentUTCTime">
+            <script>
+                const myDate = new Date();
+                let date = myDate.toUTCString();
+                document.write(date);
+            </script>
+        </p>
+    </div>
+</body>
+</html>
